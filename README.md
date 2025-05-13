@@ -1,2 +1,2 @@
 # bspwm_configuration
-Em construção
+Script ainda em construção
