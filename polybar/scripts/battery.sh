@@ -1,24 +1,30 @@
 #!/bin/bash
 
-capacity=$(cat /sys/class/power_supply/axp288_fuel_gauge/capacity)
-status=$(cat /sys/class/power_supply/axp288_fuel_gauge/status)
+info=$(acpi -b)
 
-if [ "$capacity" -ge 90 ]; then
+# Extrai a porcentagem e status
+capacity=$(echo "$info" | grep -oP '\d+%' | tr -d '%')
+status=$(echo "$info" | grep -oP 'Charging|Discharging|Full')
+
+# Define ícone conforme status
+if [ "$status" = "Charging" ]; then
+    icon=""  # ícone de raio
+elif [ "$capacity" -ge 90 ]; then
     icon=""
 elif [ "$capacity" -ge 70 ]; then
     icon=""
-elif [ "$capacity" -ge 50 ]; then
+elif [ "$capacity" -ge 40 ]; then
     icon=""
 elif [ "$capacity" -ge 20 ]; then
     icon=""
 else
     icon=""
-    echo "%{F#FF5555}$icon $capacity%%{F-}"  # Vermelho para bateria crítica
-    exit
 fi
 
-if [ "$status" = "Charging" ]; then
-    icon=" $icon"
+# Cor vermelha se carga baixa
+if [ "$capacity" -le 15 ]; then
+    echo "%{F#FF5555}$icon $capacity%%{F-}"
+else
+    echo "$icon $capacity%"
 fi
 
-echo "$icon $capacity%"

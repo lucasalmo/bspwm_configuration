@@ -7,7 +7,7 @@ case "$chosen" in
         polybar-msg cmd restart
         ;;
     " Bloquear")
-        i3lock  # ou "betterlockscreen -l" dependendo do seu sistema
+        sh ~/.config/bspwm/scripts/lock.sh
         ;;
     "⏻ Desligar")
         systemctl poweroff
