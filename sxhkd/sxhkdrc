@@ -126,9 +126,32 @@ super + {Left,Down,Up,Right}
 
 # Aumenta o brilho em 10%
 XF86MonBrightnessUp
-    brightnessctl set +10%
+	brightnessctl set +10%
 
 # Diminui o brilho em 10%
 XF86MonBrightnessDown
-    brightnessctl set 10%-
+	brightnessctl set 10%-
 
+# Volume up
+XF86AudioRaiseVolume
+    amixer -q set Master 5%+
+
+# Volume down
+XF86AudioLowerVolume
+    amixer -q set Master 5%-
+
+# Mute/unmute
+XF86AudioMute
+    amixer -q set Master toggle
+
+# Menu de ajuda (atalhos)
+F2
+	~/.config/bspwm/scripts/help_menu.sh
+
+# Abre o navegador Brave
+super + shift + f
+	brave
+
+# Abre power menu
+alt + F4
+	~/.config/polybar/scripts/rofi_power.sh

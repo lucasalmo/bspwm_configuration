@@ -27,3 +27,5 @@ feh --bg-scale ~/Images/pexels-carlos-oliva-1966452-3586966.jpg &
 flameshot
 nm-applet &
 udiskie -N &
+blueman-applet &
+
