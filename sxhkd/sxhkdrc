@@ -146,7 +146,7 @@ XF86AudioMute
 
 # Menu de ajuda (atalhos)
 F2
-	~/.config/bspwm/scripts/help_menu.sh
+	~/.config/bspwm/scripts/help_notify.sh
 
 # Abre o navegador Brave
 super + shift + f
