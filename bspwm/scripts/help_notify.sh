@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ROFI_THEME="$HOME/.config/rofi/theme/config1.rasi"
+ROFI_THEME="$HOME/.config/rofi/themes/config1.rasi"
 
 HELP_CONTENT=$(cat <<EOF
 <span font="FiraCode Nerd Font Bold 16" foreground="#7aa2f7"> BSPWM Hotkeys</span>

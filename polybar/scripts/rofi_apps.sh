@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Caminho do tema
-THEME="$HOME/.config/rofi/theme/config1.rasi"
+THEME="$HOME/.config/rofi/themes/config1.rasi"
 
 # Verifica se o rofi está instalado
 if ! command -v rofi &> /dev/null; then

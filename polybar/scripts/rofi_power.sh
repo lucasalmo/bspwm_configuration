@@ -1,6 +1,6 @@
 #!/bin/bash
 
-chosen=$(printf "  Reiniciar Polybar\n  Bloquear\n⏻  Desligar\n  Reiniciar\n  Sair" | rofi -dmenu -p "Menu" -theme ~/.config/rofi/theme/config1.rasi)
+chosen=$(printf "  Reiniciar Polybar\n  Bloquear\n⏻  Desligar\n  Reiniciar\n  Sair" | rofi -dmenu -p "Menu" -theme ~/.config/rofi/themes/config1.rasi)
 
 case "$chosen" in
   *"Reiniciar Polybar"*)

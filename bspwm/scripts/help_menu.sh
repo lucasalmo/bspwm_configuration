@@ -37,4 +37,4 @@ mensagem="
 [ Pressione ESC para fechar ]
 "
 
-echo "$mensagem" | rofi -e - -theme ~/.config/rofi/theme/help.rasi
+echo "$mensagem" | rofi -e - -theme ~/.config/rofi/themes/help.rasi
