@@ -1,35 +1,16 @@
-# Dracula for [rofi](https://github.com/davatorium/rofi)
-
-> A dark theme for [rofi](https://github.com/davatorium/rofi).
-
-Rofi is an incredibly customisable launcher, here are some example Dracula themes to get you started.
-
-### theme/config1.rasi
-
-![Screenshot1](./screenshot.png)
-
-### theme/config2.rasi
-
-![Screenshot2](./screenshot2.png)
-
 ## Install
+Lista de pacotes
+```bash
+bspwm sxhkd polybar nerd-fonts pcmanfm lxappearance xfce4-terminal feh flameshot network-manager-applet acpi i3lock rofi xorg-xinit xorg sddm vim wget curl xfce4-power-manager yazi git github-cli pacman-contrib acpid picom
+```
 
-All instructions can be found at [draculatheme.com/rofi](https://draculatheme.com/rofi).
+O pacote pacman contrib é essencial para verificar as atualizações do sistema, já o pacote acpid é necessário para utilização do botão power pois o bspwm não lida diretamente com eventos de hardware
 
-## Team
+Os nomes dos pacotes podem mudar de acordo com a distribuição que você estiver utilizando, aqui o processo foi feito com o arch linux
 
-This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/rofi/graphs/contributors).
+Para obter as atualizações na polybar é necessário adicionar o conteúdo abaixo no [](/etc/sudoers)
 
-| [![Raph](https://avatars2.githubusercontent.com/u/28673457?s=70)](https://github.com/RaphGL) |
-| -------------------------------------------------------------------------------------------- |
-| [Raph](https://github.com/RaphGL)                                                            |
-
-## Community
-
-- [Twitter](https://twitter.com/draculatheme) - Best for getting updates about themes and new stuff.
-- [GitHub](https://github.com/dracula/dracula-theme/discussions) - Best for asking questions and discussing issues.
-- [Discord](https://draculatheme.com/discord-invite) - Best for hanging out with the community.
-
-## License
-
-[MIT License](./LICENSE)
+```bash
+seu_usuário ALL=(ALL) NOPASSWD: /usr/bin/pacman -Syu
+```
+substitua o nome do seu usuário em **seu usuário**
