@@ -8,7 +8,7 @@ O pacote pacman contrib é essencial para verificar as atualizações do sistema
 
 Os nomes dos pacotes podem mudar de acordo com a distribuição que você estiver utilizando, aqui o processo foi feito com o arch linux
 
-Para obter as atualizações na polybar é necessário adicionar o conteúdo abaixo no [](/etc/sudoers)
+Para obter as atualizações na polybar é necessário adicionar o conteúdo abaixo no `/etc/sudoers`
 
 ```bash
 seu_usuário ALL=(ALL) NOPASSWD: /usr/bin/pacman -Syu
