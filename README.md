@@ -1,7 +1,7 @@
 ## Install
 Lista de pacotes
 ```bash
-bspwm sxhkd polybar nerd-fonts pcmanfm lxappearance xfce4-terminal feh flameshot network-manager-applet acpi i3lock rofi xorg-xinit xorg sddm vim wget curl xfce4-power-manager yazi git github-cli pacman-contrib acpid picom
+bspwm sxhkd polybar nerd-fonts pcmanfm lxappearance xfce4-terminal feh flameshot network-manager-applet acpi i3lock rofi xorg-xinit xorg sddm vim wget curl xfce4-power-manager yazi git github-cli pacman-contrib acpid picom papirus-icon-theme pavucontrol xorg-server
 ```
 
 O pacote pacman contrib é essencial para verificar as atualizações do sistema, já o pacote acpid é necessário para utilização do botão power pois o bspwm não lida diretamente com eventos de hardware

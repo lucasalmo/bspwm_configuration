@@ -24,6 +24,7 @@ bspc rule -a Screenkey manage=off
 xfce4-power-manager &
 ~/.config/polybar/launch.sh &
 feh --bg-scale ~/Images/pexels-carlos-oliva-1966452-3586966.jpg & 
+picom --config ~/.config/picom/picom.conf &
 flameshot
 nm-applet &
 udiskie -N &
