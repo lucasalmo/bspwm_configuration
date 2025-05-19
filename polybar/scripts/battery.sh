@@ -1,8 +1,15 @@
 #!/bin/bash
 
-capacity=$(cat /sys/class/power_supply/axp288_fuel_gauge/capacity)
-status=$(cat /sys/class/power_supply/axp288_fuel_gauge/status)
+# Captura a saída do comando acpi
+acpi_output=$(acpi -b)
 
+# Extrai a porcentagem da bateria (remove %)
+capacity=$(echo "$acpi_output" | grep -oP '\d+%' | tr -d '%')
+
+# Extrai o status (Charging, Discharging, Full, etc.)
+status=$(echo "$acpi_output" | awk -F', ' '{print $1}' | awk '{print $3}')
+
+# Define o ícone com base na carga
 if [ "$capacity" -ge 90 ]; then
     icon=""
 elif [ "$capacity" -ge 70 ]; then
