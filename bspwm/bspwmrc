@@ -20,11 +20,13 @@ bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
+bspc config focus_follows_pointer true
+bspc config window_gap 2
 
 xfce4-power-manager &
 ~/.config/polybar/launch.sh &
-feh --bg-scale ~/Images/pexels-carlos-oliva-1966452-3586966.jpg & 
-picom --config ~/.config/picom/picom.conf &
+picom &
+feh --bg-scale ~/Imagens/paisagem.jpg &
 flameshot
 nm-applet &
 udiskie -N &
