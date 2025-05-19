@@ -1,4 +1,12 @@
 ## Install
+Instalando o yay
+```bash
+git clone https://aur.archlinux.org/yay.git
+```
+Após clonar o repositório instale o yay
+```bash
+makepkg -si
+```
 Lista de pacotes
 ```bash
 bspwm sxhkd polybar nerd-fonts pcmanfm lxappearance xfce4-terminal feh flameshot network-manager-applet acpi i3lock rofi xorg-xinit xorg sddm vim wget curl xfce4-power-manager yazi git github-cli pacman-contrib acpid picom papirus-icon-theme pavucontrol xorg-server xf86-input-synaptics
