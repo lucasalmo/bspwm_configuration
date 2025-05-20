@@ -23,6 +23,10 @@ HELP_CONTENT=$(cat <<EOF
 <span foreground="#7dcfff">󰍛   Controles</span>
 <b>  + Alt + R</b>   Reiniciar BSPWM
 <b>  + Shift + B</b> Bloquear tela
+<b>  + alt + l</b> aumenta o tamanho da janela que esta do lado esquerdo da tela
+<b>  + alt + h</b> aumenta o tamanho da janela que esta do lado direito da tela
+<b>  + alt + shift + h</b> diminui o tamanho da janela que esta do lado esquerdo da tela
+<b>  + alt + shift + l</b> diminui o tamanho da janela que esta do lado direito da tela
 <b>F2</b>            Mostrar esta ajuda
 EOF
 )
