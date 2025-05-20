@@ -9,7 +9,7 @@ makepkg -si
 ```
 Lista de pacotes
 ```bash
-firefox bspwm sxhkd polybar nerd-fonts pcmanfm lxappearance xfce4-terminal feh flameshot network-manager-applet acpi i3lock rofi xorg-xinit xorg sddm vim wget curl xfce4-power-manager yazi git github-cli pacman-contrib acpid picom papirus-icon-theme pavucontrol xorg-server xf86-input-synaptics gsimplecal gnome-themes-extra
+firefox bspwm sxhkd polybar nerd-fonts pcmanfm lxappearance xfce4-terminal feh flameshot network-manager-applet acpi i3lock rofi xorg-xinit xorg sddm vim wget curl xfce4-power-manager yazi git github-cli pacman-contrib acpid picom papirus-icon-theme pavucontrol xorg-server xf86-input-synaptics gsimplecal gnome-themes-extra brightnessctl pamixer
 ```
 
 O pacote pacman contrib é essencial para verificar as atualizações do sistema, já o pacote acpid é necessário para utilização do botão power pois o bspwm não lida diretamente com eventos de hardware

@@ -134,15 +134,15 @@ XF86MonBrightnessDown
 
 # Volume up
 XF86AudioRaiseVolume
-    amixer -q set Master 5%+
+	pamixer -i 5
 
 # Volume down
 XF86AudioLowerVolume
-    amixer -q set Master 5%-
+	pamixer -d 5
 
 # Mute/unmute
 XF86AudioMute
-    amixer -q set Master toggle
+	pamixer -t
 
 # Menu de ajuda (atalhos)
 F2
