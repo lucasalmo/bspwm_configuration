@@ -24,6 +24,7 @@ bspc config focus_follows_pointer true
 bspc config window_gap 2
 
 xfce4-power-manager &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 ~/.config/polybar/launch.sh &
 picom &
 feh --bg-scale ~/Imagens/paisagem.jpg &
