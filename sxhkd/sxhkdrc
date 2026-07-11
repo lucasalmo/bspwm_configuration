@@ -22,6 +22,18 @@ super + Escape
 super + alt + {q,r}
 	bspc {quit,wm -r}
 
+# screenshot (maim - seleção)
+super + d
+    sh -c "maim -s | xclip -selection clipboard -t image/png -i"
+
+# screenshot (flameshot)
+super + shift + d
+    pkill -STOP picom; sleep 0.05; flameshot gui; pkill -CONT picom
+
+# screenshot (ffmpeg - tela cheia)
+Print
+    pkill -STOP picom; sleep 0.05; ffmpeg -f x11grab -i :0.0 -vframes 1 ~/Pictures/ss_$(date +%Y%m%d_%H%M%S).png; pkill -CONT picom
+
 # close and kill
 super + {_,shift + }w
 	bspc node -{c,k}
